@@ -13,7 +13,7 @@ const promptList=[
 ];
 
 program
-    .version('1.0.5')
+    .version('1.0.6')
     .option('-v,--version','view version')
     .command('init [dir]')
     .description('初始化一个项目')
@@ -76,7 +76,8 @@ function copyTemplate(projectName) {
            });
            return;
        }
-        copy(src);                      //目录存在
+       console.error('fail:directory already exists!');
+        // copy(src);                      //目录存在
     });
 
 }
