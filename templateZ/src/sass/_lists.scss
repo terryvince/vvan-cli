@@ -1,0 +1,44 @@
+.list-block{
+  margin-top: .2rem;
+}
+.list{
+  background: white;
+  width: 100%;
+  //color: #555;
+  font-size: .28rem;
+  a.list-item{
+    color: $color-text;
+  }
+  .list-item{
+    width: 100%;
+    padding: $bar-side-spacing $bar-side-spacing;
+    @include flexMainAlign(start);
+    position: relative;
+    &.list-small{
+      padding-top: .1rem;
+      padding-bottom: .1rem;
+    }
+    // not-beside not-up-down
+    &.list-not-beside{
+      padding: $bar-side-spacing 0;
+    }
+    &.list-not-up-down{
+      padding: 0 $bar-side-spacing;
+    }
+    &.list-space-between{
+      justify-content: space-between;
+    }
+    &.list-space-evenly{
+      justify-content: space-evenly;
+    }
+    &.list-space-around{
+      justify-content: space-around;
+    }
+    &.list-down-line{
+      @include thinLine(down, #d7d5d8);
+    }
+    input,textarea{
+      border: none;
+    }
+  }
+}

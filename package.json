@@ -1,0 +1,34 @@
+{
+  "name": "vvan-cli",
+  "version": "1.0.5",
+  "description": "front-template cli",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/terryvince/front-template-cli.git"
+  },
+  "keywords": [
+    "vv",
+    "vvan",
+    "cli",
+    "vvan-cli",
+    "front-template"
+  ],
+  "bin": {
+    "vvan": "./index.js"
+  },
+  "author": "terryvince",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/terryvince/front-template-cli/issues"
+  },
+  "homepage": "https://github.com/terryvince/front-template-cli#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "commander": "^4.0.1",
+    "inquirer": "^7.0.0"
+  }
+}
