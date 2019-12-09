@@ -13,7 +13,7 @@ const promptList=[
 ];
 
 program
-    .version('1.0.6')
+    .version('1.0.7')
     .option('-v,--version','view version')
     .command('init [dir]')
     .description('初始化一个项目')
