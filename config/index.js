@@ -1,16 +1,13 @@
-{
+module.exports = {
     "name": "webpack-build-template",
     "version": "1.0.0",
     "description": "webpack build template",
     "main": "main.js",
-    "os": [
-        "win32"
-    ],
+    "os": ["win32"],
     "scripts": {
         "start": "npm run dev",
         "dev": "set NODE_ENV=development&& node build/index.js",
-        "build": "set NODE_ENV=production&& node build/index.js",
-        "test": "echo Error: no test"
+        "build": "set NODE_ENV=production&& node build/index.js"
     },
     "repository": {
         "type": "git",
@@ -75,7 +72,7 @@
     },
     "dependencies": {
         "@babel/runtime": "^7.6.2",
-        "vue": "^2.6.10"
+        "vue": "^2.6.10",
     },
     "browserslist": [
         "last 2 version",
@@ -86,3 +83,4 @@
         "Firefox > 20"
     ]
 }
+
