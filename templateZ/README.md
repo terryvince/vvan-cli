@@ -1,5 +1,5 @@
-# webpack build template
-template of the front end，support vue，typescript， sass，eslint，babel，postcss，ejs，pug，code splitting，sourceMap, mutiple page development and simple page development
+# Hello World
+a front template
 
 ## install and start
 ```command

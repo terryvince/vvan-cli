@@ -79,9 +79,22 @@ let baseConfig = {
         },
         {
             test: /\.ts$/,
-            loader: 'ts-loader',
-            exclude: /node_modules/,
-            options: { appendTsSuffixTo: [/\.vue$/] }
+            use:[{
+                    loader: 'babel-loader',
+                    options: {
+                        cacheDirectory: true
+                    }
+                },
+                {
+                    loader: 'ts-loader',
+                    options: { appendTsSuffixTo: [/\.vue$/] }
+                }
+            ],
+            include: /src/,
+            exclude: file => (
+                /node_modules/.test(file) &&
+                !/\.vue\.js/.test(file)
+            )
         },
         {
             test: /\.pug$/,
@@ -157,7 +170,7 @@ let baseConfig = {
     let files = fs.readdirSync(src);
     let entrys = files.filter(fileName => extname(fileName) === '.js');
     let pages = files.filter(fileName => extname(fileName) === '.html');
-    let isVue = files.findIndex(fileName => /.vue/.test(fileName));   //vue单页开发环境
+    let isVue = files.findIndex(fileName => /.vue/.test(fileName))>-1;   //vue单页开发环境
     let entryOb = {};
     let injectMode = '';
     if (isVue) {

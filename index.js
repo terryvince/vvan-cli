@@ -34,7 +34,7 @@ const electronPromptList=[
 ];
 
 program
-    .version('1.0.7')
+    .version('1.0.8')
     .option('-v,--version','view version')
     .command('init [dir]')
     .description('初始化一个项目')
