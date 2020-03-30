@@ -6,7 +6,7 @@
 
 ``` bash
 # install dependencies
-npm install vvan-cli
+npm install vvan-cli -g
 
 # init a project
 vvan init <projectName>
