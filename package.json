@@ -28,7 +28,7 @@
   "homepage": "https://github.com/terryvince/front-template-cli#readme",
   "devDependencies": {},
   "dependencies": {
-    "commander": "^4.0.1",
-    "inquirer": "^7.0.0"
+    "commander": "^6.0.0",
+    "inquirer": "^7.3.2"
   }
 }

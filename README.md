@@ -1,6 +1,6 @@
 # vvan-cli
 
-> A Node cli project
+> A node cli project
 
 ## Build Setup
 
@@ -8,6 +8,14 @@
 # install dependencies
 npm install vvan-cli -g
 
-# init a project
-vvan init <projectName>
+# create a vue project
+vvan create vue <projectName>
 ```
+
+## Command Options
+* `-h`: help
+* `-v`: version
+* `init`: initial vvan.config.js
+* `create component [componentName]`: create a componnent
+* `create electron [projectName]`: create an electron project
+* `create vue [projectName]`: create a vue project
